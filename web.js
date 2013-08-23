@@ -3,7 +3,7 @@ var app = express();
 app.use(express.logger());
 
 var fs = require('fs');
-var data = fs.readFileSync("index2.html","utf-8");
+var data = fs.readFileSync("manufacturing.html","utf-8");
 
 app.get('/', function(request, response) {
   response.send(data);
