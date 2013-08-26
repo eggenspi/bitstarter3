@@ -12,7 +12,7 @@ app.get('/', function(request, response) {
 });
 
 app.get('/technology.html', function(request, response) {
-  response.send(data);
+  response.send(data2);
 });
 
 app.get('/contact.html', function(request, response) {
