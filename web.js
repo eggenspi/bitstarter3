@@ -11,6 +11,10 @@ app.get('/', function(request, response) {
   response.send(data);
 });
 
+app.get('/manufacturing.html', function(request, response) {
+  response.send(data);
+});
+
 app.get('/technology.html', function(request, response) {
   response.send(data2);
 });
