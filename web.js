@@ -4,9 +4,14 @@ app.use(express.logger());
 
 var fs = require('fs');
 var data = fs.readFileSync("manufacturing.html","utf-8");
+var data2 = fs.readFileSync("technology.html","utf-8");
 
 app.get('/', function(request, response) {
   response.send(data);
+});
+
+app.get('/technology.html', function(request, response) {
+  response.send(data2);
 });
 
 var port = process.env.PORT || 8080;
