@@ -16,7 +16,7 @@ app.get('/technology.html', function(request, response) {
 });
 
 app.get('/contact.html', function(request, response) {
-  response.send(data);
+  response.send(data3);
 });
 
 var port = process.env.PORT || 8080;
